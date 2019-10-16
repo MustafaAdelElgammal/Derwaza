@@ -1,0 +1,68 @@
+/* Skill area css
+============================================================================================ */
+.skill_area{
+    background: #efefef;
+    padding: 110px 0px;
+    .skill_content{
+        text-align: center;
+        h4{
+            color: $dip;
+            font-family: $os;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 36px;
+            padding-bottom: 10px;
+        }
+        i{
+            color: $dip;
+            font-size: 72px;
+        }
+        p{
+            text-align: left;
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $op;
+            padding-right: 25px;
+            padding-top: 10px;
+        }
+    }
+}
+.skill_main{
+    .skill_item{
+        margin-bottom: 30px;
+        h4{
+            font-size: 16px;
+            font-family: $op;
+            font-weight: 600;
+            color: $dip;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        .skill_inner{
+            height: 30px;
+            background: $dip;
+            width: 100%;
+            position: relative;
+            .progress-bar{
+                position: absolute;
+                left: 0px;
+                height: 100%;
+                top: 0px;
+                background: $baseColor;
+                width: 0%;
+                text-align: right;
+                font-size: 16px;
+                color: #fff;
+                font-family: $op;
+                font-weight: 600;
+                line-height: 30px;
+                padding-right: 10px;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+/* End Skill area css
+============================================================================================ */

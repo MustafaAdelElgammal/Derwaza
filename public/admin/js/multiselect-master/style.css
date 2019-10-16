@@ -1,0 +1,53 @@
+.github.ribbon {
+	position: fixed;
+	display: block;
+	top: 40px;
+	right: 0;
+	border: 0;
+	z-index: 1001;
+}
+
+.prettyprint {
+	padding: 10px!important;
+}
+
+#wrap {
+	padding-top: 70px;
+}
+
+#home h1 {
+	margin-bottom: 30px;
+}
+#demo,
+#examples,
+#support,
+#download {
+	padding-top: 40px;
+}
+
+
+
+#parent-of-selected-sides .form-group {
+	margin: 0;
+}
+
+#parent-of-selected-sides select[multiple] {
+	border: 1px solid #dcdcdc;
+	height: 180px;
+	width: 100%;
+	border-right: 0;
+	padding: 2px;
+}
+#parent-of-selected-sides select[multiple]  option{
+	border-bottom: 1px solid #e6e6e6;
+	padding: 10px 10px;
+	font-weight: bold;
+}
+
+#multiselect_rightSelected, #multiselect_leftSelected {
+	margin-top: 46px;
+	border: 1px solid #e4e7ea;
+	height: 44px;
+	border-radius: 0;
+	color: #1caf9a;
+}

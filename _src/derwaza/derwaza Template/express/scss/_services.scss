@@ -1,0 +1,999 @@
+/* End Company History css
+============================================================================================ */
+.about_history_area{
+    background: #1e2126;
+    padding: 110px 0px;
+    .history_details{
+        text-align: right;
+        p{
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: .10px;
+            color: #a3a3a3;
+            font-family: $os;
+            font-weight: 400;
+            span{
+                color: #fff;
+            }
+            & + p{
+                color: #777777;
+                padding: 35px 0px 50px 0px;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        h5{
+            font-size: 16.5px;
+            font-family: $op;
+            color: #fff;
+            padding-top: 25px;
+            span{
+                font-family: "monB";
+            }
+        }
+    }
+}
+.company_history{
+    h4{
+        font-size: 40px;
+        font-family: $os;
+        color: #555555;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 60px;
+        font-family: $os;
+        color: $baseColor;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+    h5{
+        text-align: right;
+        letter-spacing: 6.90px;
+        color: #a1a1a1;
+        font-size: 12px;
+        font-family: $os;
+        text-transform: uppercase;
+        padding-bottom: 45px;
+    }
+    img{
+        max-width: 100%;
+    }
+}
+.experience_box{
+    .bg_box{
+        position: relative;
+        img{
+            max-width: 100%;
+        }
+        .content_box{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+            text-align: center;
+            transform: translateY(-50%);
+            img{
+                max-width: 100%;
+            }
+            h4{
+                font-size: 22px;
+                font-family: $ral;
+                color: $baseColor;
+                font-weight: 600;
+                padding-top: 25px;
+            }
+        }
+    }
+    .count_area{
+        padding-left: 25px;
+        .item{
+            display: inline-block;
+            padding-right: 40px;
+            margin-top: 50px;
+            h4{
+                font-size: 18px;
+                font-family: $os;
+                color: #555555;
+                padding-bottom: 4px;
+            }
+            h3{
+                font-size: 50px;
+                color: #888888;
+                font-family: $os;
+            }
+        }
+    }
+}
+/* End Company History css
+============================================================================================ */
+
+/* Services area css
+============================================================================================ */
+.services_area{
+    padding: 110px 0px 0px 0px;
+    .main_title{
+        padding-bottom: 50px;
+    }
+    .services_inner{
+        .service_item{
+            width: calc(100% / 4);
+            float: left;
+            position: relative;
+            overflow: hidden;
+            img{
+                max-width: 100%;
+            }
+            .services_hover{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                z-index: 2;
+                &:before{
+                    content: '';
+                    background: rgba(30, 33, 38, .80);
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -1;
+                    left: 0px;
+                    top: 0px;
+                    transform-origin: 50% 0;
+                    transform: scaleY(0);
+                    transition: all 0.3s;
+                }
+                h4{
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: #fff;
+                    font-family: $os;
+                    text-transform: uppercase;
+                    padding-top: 30px;
+                }
+                .readmore_btn{
+                    position: absolute;
+                    bottom: -100px;
+                    left: 0px;
+                    width: 100%;
+                    text-align: center;
+                    right: 0px;
+                    margin: auto;
+                }
+            }
+            &:hover{
+                .services_hover{
+                    &:before{
+                        -webkit-transform: scaleY(1);
+                        transform: scaleY(1);
+                    }
+                    .readmore_btn{
+                        bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Services area css
+============================================================================================ */
+
+/* Services Chose css
+============================================================================================ */
+.service_chose_area{
+    padding: 100px 0px;
+    overflow: hidden;
+    clear: both;
+}
+.chose_item{
+    .media{
+        .media-left{
+            padding-right: 20px;
+            h3{
+                font-size: 152px;
+                color: #daecf9;
+                font-family: $os;
+                line-height: 138px;
+            }
+        }
+        .media-body{
+            vertical-align: bottom;
+            h4{
+                font-size: 36px;
+                color: $baseColor;
+                font-family: $os;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 43px;
+                .smaller_text{
+                    display: block;
+                    color: #31353d;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 14px;
+        line-height: 26px;
+        color: #6a6a6a;
+        font-family: $op;
+        padding: 35px 0px;
+    }
+}
+/* End Services Chose css
+============================================================================================ */
+
+/* Services area css
+============================================================================================ */
+.quick_area{
+    .left_quick{
+        width: calc(50% + 116px);
+        float: left;
+        overflow: hidden;
+        background: #31353d;
+        min-height: 800px;
+    }
+}
+.right_quick{
+    width: calc(50% - 116px);
+    float: right;
+    overflow: hidden;
+    background: $baseColor;
+    min-height: 800px;
+}
+.quick_content_inner{
+    max-width: 700px;
+    float: right;
+    width: 100%;
+    padding-top: 30px;
+    .quick_item{
+        width: calc(100% / 2);
+        float: left;
+        overflow: hidden;
+        text-align: center;
+        color: #fff;
+        padding-top: 90px;
+        .quick_icon{
+            position: relative;
+            img{
+                & + img{
+                    position: absolute;
+                    top: 0px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    opacity: 0;
+                    @include transition;
+                }
+            }
+        }
+        h3{
+            font-size: 18px;
+            font-family: $os;
+            font-weight: bold;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include transition;
+        }
+        p{
+            font-size: 14px;
+            line-height: 30px;
+            font-family: $op;
+            text-align: center;
+            @include transition;
+        }
+        &:hover{
+            .quick_icon{
+                img{
+                    & + img{
+                        opacity: 1;
+                    }
+                }
+            }
+            h3{
+                color: $baseColor;
+            }
+            p{
+                color: $baseColor;
+            }
+        }
+    }
+}
+.quick_form{
+    max-width: 470px;
+    width: 100%;
+    padding-top: 110px;
+    padding-left: 30px;
+    .quick_title{
+        padding-bottom: 30px;
+    }
+}
+.quick_contact{
+    .form-group{
+        margin-bottom: 28px;
+        input{
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #fff;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0px 2px;
+            font-family: $op;
+            font-size: 14px;
+            color: #7ecafe;
+            @include placeholder{
+                font-family: $op;
+                font-size: 14px;
+                color: #7ecafe;
+            }
+        }
+        textarea{
+            border: none;
+            border-bottom: 1px solid #fff;
+            background: transparent;
+            resize: none;
+            box-shadow: none;
+            border-radius: 0px;
+            padding: 0px 2px 15px 2px;
+            font-family: $op;
+            font-size: 14px;
+            color: #7ecafe;
+            @include placeholder{
+                font-family: $op;
+                font-size: 14px;
+                color: #7ecafe;
+            }
+        }
+        .bootstrap-select{
+            width: 100% !important;
+            .btn-default{
+                background: transparent;
+                border-radius: 0px;
+                border: none;
+                border-bottom: 1px solid #fff;
+                padding: 0px 2px 8px 2px;
+                font-family: $op;
+                font-size: 14px;
+                color: #7ecafe;
+                outline: none !important;
+                box-shadow: none !important;
+                .filter-option{
+                    font-family: $op;
+                    font-size: 14px;
+                    color: #7ecafe;
+                }
+                .bs-caret{
+                    margin-left: -20px;
+                    &:before{
+                        content: "\F140";
+                        font: normal normal normal 24px/1 "Material Design Icons";
+                        color: #fff;
+                    }
+                    .caret{
+                        display: none;
+                    }
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        outline: none !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+        .btn_custom_black{
+            margin-top: 40px;
+        }
+    }
+}
+/* End Services area css
+============================================================================================ */
+
+/* Services area2 css
+============================================================================================ */
+.services_area2{
+    padding: 110px 0px;
+    .main_title{
+        padding-bottom: 50px;
+    }
+}
+.services_item2_inner{
+    overflow: hidden;
+    .service_single_item{
+        background: $baseColor;
+        text-align: center;
+        padding: 55px 0px 70px 0px; 
+        img{
+            padding-bottom: 35px;
+        }
+        h4{
+            text-transform: uppercase;
+            font-family: $os;
+            font-weight: bold;
+            font-size: 18px;
+            color: #fff;
+            padding-bottom: 25px;
+        }
+        p{
+            text-align: left;
+            font-size: 14px;
+            line-height: 26px;
+            color: #fff;
+            font-family: $op;
+            max-width: 210px;
+            margin: 0 auto;
+        }
+    }
+    .col-md-3{
+        &:nth-child(2){
+            .service_single_item{
+                background: #2282c3;
+            }
+        }
+        &:nth-child(3){
+            .service_single_item{
+                background: #1c679a;
+            }
+        }
+        &:last-child{
+            .service_single_item{
+                background: #0d5381;
+            }
+        }
+    }
+}
+/* End Services area2 css
+============================================================================================ */
+
+/* Happy counter css
+============================================================================================ */
+.happy_counters{
+    background: $dip;
+    overflow: hidden;
+    clear: both;
+    padding: 60px 0px;
+    margin-top: 60px;
+    overflow: hidden;
+    clear: both;
+    .counter_item{
+        text-align: center;
+        h3{
+            color: #fff;
+            font-size: 18px;
+            font-family: $os;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding-bottom: 20px;
+            position: relative;
+            &:before{
+                content: '';
+                width: 60px;
+                height: 3px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 0px;
+                background: #fff;
+            }
+        }
+        h5{
+            color: #fff;
+            font-size: 35px;
+            font-family: $op;
+            padding-top: 25px;
+        }
+    }
+}
+/* End Happy Counter css
+============================================================================================ */
+
+/* Our Express area css
+============================================================================================ */
+.our_express_area{
+    background: #1e2126;
+    padding: 110px 0px;
+}
+.our_express_inner{
+    padding-right: 70px;
+    h3{
+        font-size: 49px;
+        color: $baseColor;
+        font-family: $os;
+        letter-spacing: 4.9px;
+        text-transform: uppercase;
+        padding-bottom: 7px;
+    }
+    h4{
+        font-size: 30px;
+        color: #555555;
+        text-transform: uppercase;
+        font-family: $os;
+    }
+    h5{
+        font-size: 12px;
+        color: #a1a1a1;
+        font-family: $os;
+        letter-spacing: 8.28px;
+        text-align: right;
+    }
+    p{
+        font-size: 14px;
+        line-height: 25px;
+        color: #a3a3a3;
+        letter-spacing: .14px;
+        padding-top: 25px;
+        span{
+            color: #fff;
+        }
+        & + p{
+            padding-top: 30px;
+            color: #777777;
+        }
+    }
+    img{
+        max-width: 100%;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    h6{
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: .16px;
+        span{
+            font-family: "monB";
+        }
+    }
+}
+.our_express_item{
+    background: #2f343a;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 30px 30px 25px 30px;
+    &:last-child{
+        margin-bottom: 0px;
+    }
+    .express_icon{
+        img{
+            max-width: 100%;
+        }
+    }
+    h4{
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 20px 0px 25px 0px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 30px;
+        font-family: $op;
+        color: #fff;
+    }
+}
+/* End Our Express area css
+============================================================================================ */
+
+/* Company Express2 area css
+============================================================================================ */
+.company_express2{
+    padding-top: 85px;
+    .company_express2_inner{
+        max-width: 774px;
+        margin: 0 auto;
+        .company_express2_left{
+            text-align: right;
+            h3{
+                font-size: 40px;
+                font-family: $os;
+                color: #555555;
+                text-transform: uppercase;
+                text-align: left;
+            }
+            h4{
+                font-family: $os;
+                color: $baseColor;
+                font-size: 60px;
+                letter-spacing: 6px;
+                text-transform: uppercase;
+                text-align: left;
+            }
+            h5{
+                font-size: 12px;
+                font-family: $os;
+                color: #a1a1a1;
+                letter-spacing: 8.28px;
+                text-align: right;
+                padding-right: 90px;
+                padding-bottom: 10px;
+                padding-top: 4px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 25px;
+                font-family: $os;
+                font-weight: 300;
+                color: #a3a3a3;
+                text-align: right;
+                letter-spacing: .14px;
+                padding: 35px 0px 0px 0px;
+                span{
+                    color: #dadada;
+                }
+                & + p{
+                    color: #777777;
+                }
+            }
+            img{
+                text-align: right;
+                padding-bottom: 28px;
+                padding-top: 40px;
+            }
+            h6{
+                color: #595959;
+                font-size: 16px;
+                font-family: $ral;
+                span{
+                    font-family: "monB";
+                }
+            }
+        }
+        .experience_box{
+            margin-top: 100px;
+        }
+    }
+}
+
+.row.mission_s_inner{
+    padding-top: 110px;
+    clear: both;
+}
+.mission_s_item{
+    .media{
+        .media-left{
+            
+        }
+        .media-body{
+            h4{
+                font-size: 24px;
+                color: $black;
+                font-family: $os;
+                text-transform: uppercase;
+                padding-bottom: 25px;
+            }
+            p{
+                font-size: 14px;
+                line-height: 26px;
+                font-family: $os;
+                color: #777777;
+            }
+        }
+    }
+}
+.image_area{
+    img{
+        max-width: 100%;
+    }
+}
+/* End Company Express2 area css
+============================================================================================ */
+
+/* Why Chose area css
+============================================================================================ */
+.why_chose_area{
+    padding: 110px 0px;
+    overflow: hidden;
+    clear: both;
+    .main_title{
+        padding-bottom: 40px;
+    }
+}
+.chose_item_inner{
+    background: #f8f8f8;
+    text-align: center;
+    padding: 0px 24px;
+    margin-top: 60px;
+    @include transition;
+    img{
+        padding-bottom: 25px;
+        padding-top: 45px;
+    }
+    h4{
+        font-size: 18px;
+        font-family: $os;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #484848;
+        padding-bottom: 22px;
+    }
+    p{
+        text-align: left;
+        font-size: 14px;
+        line-height: 30px;
+        font-family: $op;
+        color: #484848;
+        padding-bottom: 60px;
+    }
+    &:hover{
+        box-shadow: 0px 31px 40px 0px rgba(102, 102, 102, 0.31);
+    }
+}
+
+/* End Why Chose area css
+============================================================================================ */
+
+/* Service Details area css
+============================================================================================ */
+.service_details_area{
+    padding: 110px 0px;
+}
+.service_left_sidebar{
+    .left_widget{
+        margin-bottom: 55px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.widget_title{
+    padding-bottom: 38px;
+    h3{
+        font-size: 18px;
+        color: $black;
+        font-family: $os;
+        text-transform: uppercase;
+    }
+}
+.service_widget{
+    ul{
+        margin-top: -3px;
+        li{
+            margin-bottom: 5px;
+            a{
+                font-size: 14px;
+                color: #b4b4b4;
+                text-transform: uppercase;
+                font-family: $op;
+                font-style: italic;
+                @include transition;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            &:hover{
+                a{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+.question_widget{
+    img{
+        max-width: 100%;
+    }
+}
+.download_widget{
+    ul{
+        li{
+            margin-bottom: 20px;
+            a{
+                font-size: 14px;
+                color: $black;
+                font-family: $op;
+                font-weight: bold;
+                background: #f8f8f8;
+                line-height: 53px;
+                display: block;
+                @include transition;
+                img{
+                    padding-right: 24px;
+                    padding-left: 22px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            &:hover{
+                a{
+                    background: $baseColor;
+                    color: #fff;
+                    box-shadow: 0px 26px 46px 0px rgba(52, 152, 219, 0.31);
+                }
+            }
+        }
+    }
+}
+.contact_widget{
+    ul{
+        li{
+            margin-bottom: 15px;
+            a{
+                font-size: 14px;
+                color: #010101;
+                font-family: $op;
+                i{
+                    padding-right: 5px;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.service_details_inner{
+    .service_image_single{
+        img{
+            max-width: 100%;
+        }
+        h5{
+            font-size: 14px;
+            line-height: 24px;
+            color: $black;
+            font-family: $op;
+            font-weight: bold;
+            padding: 50px 0px 5px 0px;
+        }
+        p{
+            color: #a1a1a1;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $op;
+            padding-top: 25px;
+        }
+    }
+    .service_2column{
+        padding-top: 55px;
+        .media{
+            .media-left{
+                padding-right: 30px;
+            }
+            .media-body{
+                p{
+                    color: #a1a1a1;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-family: $op;
+                    padding-bottom: 35px;
+                    & + p{
+                        padding-bottom: 0px;
+                    }
+                }
+            }
+        }
+    }
+    .service_advantages{
+        padding-top: 45px;
+        h4{
+            font-size: 20px;
+            color: $black;
+            font-family: $op;
+            font-weight: bold;
+            padding-bottom: 35px;
+        }
+        p{
+            color: #a1a1a1;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: $op;
+            padding-bottom: 30px;
+            & + p{
+                padding-bottom: 0px;
+            }
+        }
+    }
+    .service_details_list{
+        padding-top: 45px;
+        ul{
+            width: calc(100% / 3);
+            float: left;
+            overflow: hidden;
+            li{
+                margin-bottom: 15px;
+                a{
+                    font-size: 16px;
+                    color: #3f3f3f;
+                    font-family: $op;
+                    font-weight: 600;
+                    @include transition;
+                    i{
+                        padding-right: 6px;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+                &:hover{
+                    a{
+                        color: $baseColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Service Details area css
+============================================================================================ */
+
+/* FAQ area css
+============================================================================================ */
+.faq_area{
+    .service_details_inner{
+        img{
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .panel-group{
+            .panel-default{
+                box-shadow: none;
+                border-radius: 0px;
+                border: none;
+                margin-top: 20px;
+                .panel-heading{
+                    padding: 0px;
+                    border: none;
+                    border-radius: 0px;
+                    background: transparent;
+                    box-shadow: none;
+                    .panel-title{
+                        a{
+                            border: 1px solid $baseColor;
+                            border-left: 3px solid $baseColor;
+                            display: block;
+                            font-size: 16px;
+                            color: #fff;
+                            font-family: $op;
+                            font-weight: 600;
+                            line-height: 58px;
+                            padding: 0px 18px;
+                            background: $baseColor;
+                            @include transition;
+                            i{
+                                float: right;
+                                font-size: 30px;
+                                color: #fff;
+                                display: none;
+                                & + i{
+                                    display: block;
+                                }
+                            }
+                            &.collapsed{
+                                background: #fff;
+                                color: #505050;
+                                border: 1px solid #dedede;
+                                border-left: 3px solid $baseColor;
+                                i{
+                                    color: #888888;
+                                    display: block;
+                                    & + i{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .panel-collapse{
+                    .panel-body{
+                        border: none;
+                        font-family: $op;
+                        color: #a1a1a1;
+                        line-height: 24px;
+                        padding: 30px 20px 30px 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End FAQ area css
+============================================================================================ */

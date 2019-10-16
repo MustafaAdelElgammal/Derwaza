@@ -1,0 +1,102 @@
+@media print {
+    body
+    {
+        margin: 0mm;
+    }
+    @page
+    {
+        size: a4 portrait;
+        margin: 0mm;
+    }
+    .page-break	{ display: block; page-break-after: always; }
+
+    #content-inner{
+        margin: 0;
+    }
+    .contentpanel{
+        padding: 0;
+    }
+    .for-print-style{
+        padding: 0 !important;
+        border: 0 !important;;
+    }
+    .card-top-info{
+        display: none !important;
+    }
+    .table>tbody>tr>td, .table>tfoot>tr>td {
+        padding: 5px;
+    }
+    .card-top-details{
+        display: block !important;
+    }
+
+    a[href]:after {
+        display: none;
+        visibility: hidden;
+    }
+
+    .table-responsive tr th{
+        background-color: #f9f9f9 !important;
+    }
+    .hidden-on-print{
+        display: none !important;
+    }
+    .pageheader{
+        display: none;
+    }
+    .nav-of-cards{
+        display: none;
+    }
+    .t-head-of-cards{
+        display: none;
+    }
+    td p{
+        margin-bottom: 0;
+    }
+
+    .print-icon{
+        display: none;
+    }
+    .print-date{
+        display: inline-block !important;
+    }
+
+    .table-responsive tr td h6:last-child{
+        display: none;
+    }
+
+    table{
+        overflow: hidden;
+    }
+    #leftpanel,
+    .headerbar,
+    #sub-user-address,
+    #sub-user-info ,
+    #sub-user-address-choose,
+    .subscription-plan-delivered,
+   .edit-subscription-day-meal{
+        display: none !important;
+    }
+    .mainpanel{
+        margin-left: 0px;
+    }
+    .stickyheader .mainpanel {
+        padding-top: 0px;
+    }
+    a[href]::after { content: none !important; }
+    .control_next{
+        display: none !important;
+    }
+    .control_prev{
+        display: none !important;;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+   .day_schedule_item{
+       display: contents !important;
+   }
+    .view-card-schedule{
+       display: none !important;
+   }
+}

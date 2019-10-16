@@ -1,0 +1,49 @@
+/*font Variables*/
+$os: 'Oswald', sans-serif;
+$op: 'Open Sans', sans-serif;
+$ral: 'Raleway', sans-serif;
+$rob: 'Roboto', sans-serif;
+
+/*Color Variables*/
+
+$baseColor: #3498db;
+$black: #000;  
+$dip: #31353d;
+$pfont: #6a6a6a;
+$sub: #656567;
+
+
+
+// Mixins
+@mixin transition($property: all, $duration: 400ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+// Font family link
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Oswald:300,400,700|Raleway:100,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900');
+
+@font-face {
+    font-family: "ralH";
+    src: url(../fonts/theme-font/Raleway-Heavy.woff);
+}
+@font-face {
+    font-family: "monR";
+    src: url(../fonts/theme-font/Montserrat-Regular.woff);
+}
+@font-face {
+    font-family: "monB";
+    src: url(../fonts/theme-font/Montserrat-Bold.woff);
+}

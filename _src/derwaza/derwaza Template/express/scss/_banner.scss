@@ -1,0 +1,44 @@
+/* Banner area css
+============================================================================================ */
+.banner_area{
+    background: url(../img/banner/banner-bg-1.jpg) no-repeat scroll center center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    padding: 154px 0px;
+    &:before{
+        content: '';
+        background: rgba(0, 0, 0, .78);
+        width: 100%;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+        position: absolute;
+        z-index: -1;
+    }
+    .banner_inner_content{
+        color: #fff;
+        a{
+            color: #fff;
+            font-size: 16px;
+            font-family: $op;
+            @include transition;
+            &.active{
+                font-weight: bold;
+            }
+        }
+        span{
+            
+        }
+        h2{
+            font-size: 50px;
+            font-family: $os;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 12.5px;
+            padding-top: 5px;
+        }
+    }
+}
+/* End Banner area css
+============================================================================================ */

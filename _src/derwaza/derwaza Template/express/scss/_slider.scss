@@ -1,0 +1,205 @@
+/* End Main Slider css
+============================================================================================ */
+.main_slider_area{
+    position: relative;
+    .rev_slider{
+        z-index: 2;
+        ul{
+            li{
+                .slider_text_box{
+                    .first_text{
+                        color: #fff;
+                        font-family: $os;
+                        text-transform: uppercase;
+                    }
+                    .secand_text{
+                        color: #fff;
+                        font-family: $os;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        letter-spacing: 2.5px !important;
+                    }
+                    .bg-box{
+                        background: $baseColor;
+                        width: 370px;
+                        height: 350px;
+                    }
+                    .logo_slider{
+                        width: 67px;
+                        height: 63px;
+                        img{
+                            max-width: 100%;
+                        }
+                    }
+                    .logo_f_text{
+                        font-family: $rob;
+                        color: #fff;
+                        text-transform: uppercase;
+                    }
+                    .logo_s_text{
+                        font-family: $rob;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .tp-leftarrow{
+            background: transparent;
+            &:before{
+                content: '';
+                background: url(../img/slider/left-arrow.png) no-repeat;
+                width: 43px;
+                height: 81px;
+            }
+        }
+        .tp-rightarrow{
+            background: transparent;
+            &:before{
+                content: '';
+                background: url(../img/slider/right-arrow.png) no-repeat;
+                width: 43px;
+                height: 81px;
+            }
+        }
+    }
+    .quote_form_area{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 2;
+        width: 100%;
+        .right_quick{
+            min-height: 794px;
+            background: rgba(52, 152, 219, .85);
+        }
+    }
+}
+/* End Main Slider css
+============================================================================================ */
+
+/* Testimonial slider css
+============================================================================================ */
+.testimonials_area{
+    background: $dip;
+    padding: 105px 0px;
+    .main_title{
+        padding-bottom: 35px;
+    }
+    .testimonail_inner{
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        .testimonail_slider{
+            .item{
+                img{
+                    width: auto;
+                    max-width: 100%;
+                    display: inline-block;
+                }
+                h3{
+                    font-size: 14px;
+                    font-family: "monR";
+                    color: #fff;
+                    padding: 15px 0px 20px 0px;
+                    span{
+                        text-transform: uppercase;
+                        color: $baseColor;
+                    }
+                }
+                i{
+                    font-size: 72px;
+                    color: #fff;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 26px;
+                    color: #fff;
+                    font-family: $ral;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+/* End Testimonial slider css
+============================================================================================ */
+
+/* End Testimonial slider css
+============================================================================================ */
+.testimonials_slider_area{
+    background: #f0f4f5;
+    padding-top: 26px;
+    .testimonials_slider_active{
+        img{
+            width: auto;
+        }
+        .testimonials_right_content{
+            h3{
+                text-transform: uppercase;
+                font-family: $os;
+                font-size: 35px;
+                color: $black;
+                letter-spacing: 1.4px;
+                padding-top: 80px;
+                padding-bottom: 15px;
+            }
+            h4{
+                color: $sub;
+                font-family: $os;
+                font-size: 14.5px;
+                letter-spacing: .58px;
+            }
+            h5{
+                font-size: 15.5px;
+                font-family: $op;
+                font-weight: bold;
+                color: $black;
+                letter-spacing: .155px;
+                padding-top: 65px;
+                padding-bottom: 35px;
+            }
+            p{
+                font-size: 15.5px;
+                line-height: 36px;
+                font-family: $op;
+                color: $sub;
+                padding-bottom: 35px;
+            }
+            h6{
+                font-size: 16px;
+                color: $black;
+                font-family: $op;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+        .owl-controls{
+            position: absolute;
+            left: 54%;
+            bottom: 110px;
+            transform: translateX(-50%);
+            .owl-nav{
+                .owl-next, .owl-prev{
+                    display: inline-block;
+                    height: 33px;
+                    width: 33px;
+                    background: #333333;
+                    color: #fff;
+                    font-size: 12px;
+                    text-align: center;
+                    line-height: 33px;
+                    @include transition;
+                    &:hover{
+                        background: $baseColor;
+                    }
+                }
+            }
+            .owl-prev{
+                margin-right: 4px;
+            }
+        }
+    }
+}
+/* End Testimonial slider css
+============================================================================================ */

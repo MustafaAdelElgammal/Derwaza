@@ -1,0 +1,140 @@
+/* Footer area css
+============================================================================================ */
+.footer_area{
+    overflow: hidden;
+    clear: both;
+    .footer_widgets_area{
+        background: #31353d;
+        padding: 55px 0px 45px 0px;
+    }
+}
+.f_title{
+    padding-bottom: 40px;
+    h4{
+        font-size: 18px;
+        font-family: $os;
+        font-weight: bold;
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 14px;
+        position: relative;
+        &:before{
+            content: '';
+            background: $baseColor;
+            height: 13px;
+            width: 3px;
+            left: 0px;
+            bottom: 2px;
+            position: absolute;
+        }
+    }
+}
+.about_widget{
+    .about_widget_inner{
+        img{
+            max-width: 100%;
+        }
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            color: rgba(255, 255, 255, .40);
+            font-family: $op;
+            padding-top: 38px;
+        }
+    }
+}
+.link_widget{
+    .link_widget_inner{
+        width: 70%;
+        float: left;
+        overflow: hidden;
+        margin-top: -7px;
+        li{
+            a{
+                font-size: 16px;
+                line-height: 36px;
+                color: rgba(255, 255, 255, .40);
+                font-family: $op;
+                @include transition;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+        }
+        & + .link_widget_inner{
+            width: 30%;
+        }
+    }
+}
+.news_widget{
+    .news_widget_inner{
+        margin-top: -5px;
+        p{
+            font-size: 14px;
+            line-height: 30px;
+            color: #fff;
+            font-family: $ral;
+        }
+        .input-group{
+            position: relative;
+            width: 100%;
+            margin-top: 45px;
+            input{
+                background: #202329;
+                border: none;
+                border-radius: 0px;
+                width: 100%;
+                display: block;
+                height: 55px;
+                padding: 0px 30px 0px 15px;
+                font-family: $op;
+                color: #50545b;
+                font-size: 14px;
+                @include placeholder{
+                    font-family: $op;
+                    color: #50545b;
+                    font-size: 14px;
+                }
+            }
+            .input-group-btn{
+                position: absolute;
+                right: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 3;
+                .btn-default{
+                    border-radius: 0px;
+                    background: transparent;
+                    border: none;
+                    color: $baseColor;
+                    padding: 6px 0px;
+                    outline: none;
+                    box-shadow: none;
+                    i{
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copy_right_area{
+    background: #262a31;
+    text-align: center;
+    h4{
+        line-height: 74px;
+        color: #fff;
+        font-size: 14px;
+        font-family: $op;
+        a{
+            color: #fff;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+    }
+}
+/* Footer area css
+============================================================================================ */

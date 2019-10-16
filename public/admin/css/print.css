@@ -1,0 +1,106 @@
+@media print {
+    @page
+    {
+        size: A4 landscape;
+    }
+    .page-break	{ display: block; page-break-before: always; }
+    #content-inner{
+        margin: 0 8px;
+    }
+    .card-top-info{
+        display: none !important;
+    }
+    .card-top-details{
+        display: block !important;
+    }
+    #plan-details-slider tbody td strong{
+        font-weight: normal !important;
+
+    }
+    a[href]:after {
+        display: none;
+        visibility: hidden;
+    }
+    #plan-details-slider{
+        height: auto !important;
+    }
+    #plan-details-slider ul li {
+        overflow: auto !important;
+        height: auto !important;
+        width: 100%;
+    }
+    .table-responsive tr th{
+        background-color: #f9f9f9 !important;
+    }
+    .hidden-on-print{
+        display: none !important;
+    }
+    .pageheader{
+        display: none;
+    }
+    .nav-of-cards{
+        display: none;
+    }
+    .t-head-of-cards{
+        display: none;
+    }
+    td p{
+        margin-bottom: 0px;
+    }
+    .sub-id-print{
+        display: inline-block !important;
+    }
+    .print-icon{
+        display: none;
+    }
+    .print-date{
+        display: inline-block !important;
+    }
+    #planned-at-page{
+        display: none;
+    }
+   #plan-details-slider{
+        page-break-before: always;
+    }
+#plan-details-slider ul li{
+    page-break-before: auto;
+    page-break-inside: avoid;
+
+}
+    .table-responsive tr td h6:last-child{
+        display: none;
+    }
+
+    table{
+        overflow: hidden;
+    }
+
+    thead tr:first-child th{
+        display: none;
+    }
+    #leftpanel,
+    .headerbar,
+    #sub-user-address,
+    #sub-user-info ,
+    #sub-user-address-choose,
+    .subscription-plan-delivered,
+   .edit-subscription-day-meal{
+        display: none !important;
+    }
+    .mainpanel{
+        margin-left: 0px;
+    }
+    .stickyheader .mainpanel {
+        padding-top: 0px;
+    }
+    a[href]::after { content: none !important; }
+    .control_next{
+        display: none !important;
+    }
+    .control_prev{
+        display: none !important;;
+    }
+    a[href]:after {
+        content: none !important;
+    }
+}

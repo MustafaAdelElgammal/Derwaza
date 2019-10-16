@@ -1,0 +1,36 @@
+/* Clients logo css
+============================================================================================ */
+.client_logo_area{
+    background: #f1f1f1;
+    .client_logo_item{
+        width: calc(100% / 5);
+        float: left;
+        text-align: center;
+        line-height: 207px;
+    }
+}
+/* End Clients logo css
+============================================================================================ */
+
+/* Project css
+============================================================================================ */
+.project_count_area{
+    padding-top: 100px;
+    padding-bottom: 120px;
+    .project_item_count{
+        text-align: center;
+        h5{
+            font-size: 18px;
+            font-family: $os;
+            color: #555555;
+            padding-bottom: 5px;
+        }
+        h3{
+            color: $baseColor;
+            font-size: 50px;
+            font-family: $os;
+        }
+    }
+}
+/* End Project css
+============================================================================================ */

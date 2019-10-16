@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|public|robots)
+#RewriteRule ^(.*)$ /public/index.php/$1 [L]
+RewriteRule ^([0-9A-Za-z-:._/\x7f-\xff]*)$ /public/index.php/$1 [L]
+RewriteCond %{HTTP:Authorization} ^(.*)
+RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
